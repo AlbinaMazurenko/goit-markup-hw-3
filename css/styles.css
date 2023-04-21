@@ -106,11 +106,11 @@ button {
 .header-nav {
    display: flex;
    margin-right: auto;
+   align-items: center;
 }
 
 .header-nav-list {
    display: flex;
-   align-items: center;
    gap: 40px;
 }
 
