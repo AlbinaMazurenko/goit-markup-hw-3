@@ -205,20 +205,26 @@ button {
 
 .functions {
    padding-top: 120px;
+   padding-bottom: 120px;
 }
 
-.functions-container {
+.functions-list {
    display: flex;
+   gap: 24px;
 }
-
-
 
 .functions-item {
+flex-basis: calc((100% - 3 * 24px));
+}
+
+.functions-header {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--navy-blue);
+
+   margin-bottom: 8px;
 }
 
 .functions-par {
@@ -228,12 +234,12 @@ button {
 }
 
 .activity{
-   padding-top: 120px;
    padding-bottom: 120px;
 }
 
-.activity-container {
+.activity-list {
    display: flex;
+   gap: 24px;
 }
 .activity-header {
    font-size: 36px;
@@ -242,6 +248,12 @@ button {
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--navy-blue);
+
+   margin-bottom: 72px;
+}
+
+.activity-image {
+   flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 .team {
@@ -257,10 +269,24 @@ button {
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--navy-blue);
+
+   margin-bottom: 72px; 
+}
+
+.team-list {
+   display: flex;
+   gap: 24px;
 }
 
 .team-item {
    background-color: var(--back-color);
+   border-radius: 0px 0px 4px 4px; 
+
+   flex-basis: calc((100% - 3 * 24px) / 4)
+}
+
+.team-worker {
+   padding: 32px 16px;
 }
 
 .worker-name {
@@ -269,12 +295,17 @@ button {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--navy-blue);
+
+   text-align: center;
+   margin-bottom: 8px;
 }
 
 .worker-position {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
+
+   text-align: center;
 }
 
 .btn {
@@ -298,6 +329,7 @@ button {
 .btn:focus {
    color: var(--back-color);
    background-color: var(--ocean);
+   border: 1px solid transparent
 }
 
 .subtitle {
@@ -321,6 +353,55 @@ button {
    padding-bottom: 100px;
 }
 
+.footer-logo {
+   font-family: "Raleway", sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--iris);
+
+   margin-right: 76px;
+   display: inline-block;
+   margin-bottom: 16px;
+}
+
+.portfolio {
+   padding: 96px 0 120px;
+}
+
+.button-list {
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+   margin-bottom: 72px;
+}
+
+.portfolio-list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 24px;
+   row-gap: 48px;
+}
+
+.portfolio-item {
+   width: calc((100% - 48px) / 3);
+}
+
+.link-container {
+   padding: 32px 16px;
+   border: 1px solid #e7e9fc;
+   border-top: none;
+}
+
+.portfolio-item-header {
+   margin-bottom: 8px;
+}
+
+.footer-par{
+   max-width: 264px;
+}
 .light-logo {
    color: var(--cloud);
 }
